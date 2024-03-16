@@ -65,9 +65,7 @@ const SignInPage: NextPage = () => {
       <div className="flex flex-col gap-2">
         <div className="flex justify-center">
           <Link href={"/"}>
-            <a>
-              <Badge42Logo className="w-48 h-48 fill-black" />
-            </a>
+            <Badge42Logo className="w-48 h-48 fill-black" />
           </Link>
         </div>
         <h1 className="text-3xl font-bold">#Sign In</h1>

@@ -13,24 +13,16 @@ const Nav: React.FC<NavProps> = () => {
     <header className="fixed z-10 top-0 border-b bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-70 w-full shadow-sm">
       <div className="flex justify-between items-center mx-auto max-w-screen-sm w-full h-12 p-2">
         <Link href={"/"}>
-          <a>
-            <Badge42Logo className="w-10 h-10 fill-black" />
-          </a>
+          <Badge42Logo className="w-10 h-10 fill-black" />
         </Link>
         <div className="flex gap-2 font-bold text-neutral-700">
-          {data && (
-            <Link href={"/me"}>
-              <a>{data.name}</a>
-            </Link>
-          )}
+          {data && <Link href={"/me"}>{data.name}</Link>}
           {data ? (
             <button className="font-bold" onClick={() => signOut()}>
               SignOut
             </button>
           ) : (
-            <Link href={"/auth/signin"}>
-              <a>SignIn</a>
-            </Link>
+            <Link href={"/auth/signin"}>SignIn</Link>
           )}
         </div>
       </div>
